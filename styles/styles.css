@@ -6,8 +6,8 @@
 }
 
 :root {
-  --color-primary: #191d2b;
-  --color-secondary: #27AE60;
+  --color-primary: #0D0D0D;
+  --color-secondary: #8C1636;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-secondary: #e98fa4;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -183,10 +183,20 @@ section {
   height: 100%;
   object-fit: cover;
   transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
+  transition: 1s ease;
 }
 .header-content .left-header .image img:hover {
-  filter: grayscale(0);
+  1px 1px #373737,
+  2px 2px #373737,
+  3px 3px #373737,
+  4px 4px #373737,
+  5px 5px #373737,
+  6px 6px #373737;
+  -webkit-transform: translateX(-23px);
+  transform: translateX(-23px);
+  transition: .9s ease;
+  -webkit-filter: brightness(115%);
 }
 .header-content .right-header {
   display: flex;
