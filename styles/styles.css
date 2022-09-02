@@ -6,6 +6,21 @@
 }
 
 :root {
+  --color-primary: #F4F4F4;
+  --color-secondary: #C0B283;
+  --color-white: #454e56;
+  --color-black: #000;
+  --color-grey0: #f8f8f8;
+  --color-grey-1: #6c7983;
+  --color-grey-2: #6c7983;
+  --color-grey-3: #6c7983;
+  --color-grey-4: #454e56;
+  --color-grey-5: #f8f8f8;
+  --color-grey-6: #12181b;
+}
+
+.light-mode {
+ 
   --color-primary: #0D0D0D;
   --color-secondary: #8C1636;
   --color-white: #FFFFFF;
@@ -19,20 +34,6 @@
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
-}
-
-.light-mode {
-  --color-primary: #FFFFFF;
-  --color-secondary: #e98fa4;
-  --color-white: #454e56;
-  --color-black: #000;
-  --color-grey0: #f8f8f8;
-  --color-grey-1: #6c7983;
-  --color-grey-2: #6c7983;
-  --color-grey-3: #6c7983;
-  --color-grey-4: #454e56;
-  --color-grey-5: #f8f8f8;
-  --color-grey-6: #12181b;
 }
 
 body {
@@ -156,12 +157,12 @@ section {
 }
 .header-content .left-header {
   display: flex;
-  align-items: center;
+  align-items: end;
   position: relative;
 }
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
-  width: 65%;
+  width: 115%;
   height: 100%;
   background-color: var(--color-secondary);
   position: absolute;
@@ -173,9 +174,9 @@ section {
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
   height: 90%;
-  width: 68%;
+ 
   margin-left: 4rem;
-  background-color: var(--color-black);
+  margin-bottom: 0;
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
